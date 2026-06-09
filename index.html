@@ -1,131 +1,213 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Champaran Masala</title>
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial,sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Champaran Masala - Asali Masala Asali Sawad</title>
 
-        body{
-            background:#fff8f0;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
 
-        header{
-            background:#c62828;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
+body{
+    background:#fff8f0;
+    color:#333;
+}
 
-        nav{
-            background:#8b0000;
-            padding:10px;
-            text-align:center;
-        }
+header{
+    background:linear-gradient(135deg,#b30000,#ff9900);
+    color:white;
+    text-align:center;
+    padding:20px;
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:0 15px;
-            font-weight:bold;
-        }
+.logo{
+    font-size:42px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
 
-        .hero{
-            text-align:center;
-            padding:60px 20px;
-        }
+.tagline{
+    font-size:18px;
+    margin-top:5px;
+}
 
-        .hero h1{
-            font-size:50px;
-            color:#c62828;
-        }
+nav{
+    background:#8b0000;
+    padding:12px;
+    text-align:center;
+}
 
-        .hero p{
-            margin-top:10px;
-            font-size:20px;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
 
-        .btn{
-            display:inline-block;
-            margin-top:20px;
-            padding:12px 25px;
-            background:#c62828;
-            color:white;
-            text-decoration:none;
-            border-radius:5px;
-        }
+.hero{
+    text-align:center;
+    padding:70px 20px;
+}
 
-        .products{
-            padding:40px 20px;
-            text-align:center;
-        }
+.hero h1{
+    font-size:50px;
+    color:#b30000;
+}
 
-        .product-box{
-            display:inline-block;
-            width:250px;
-            background:white;
-            margin:15px;
-            padding:20px;
-            border-radius:10px;
-            box-shadow:0 0 10px rgba(0,0,0,0.1);
-        }
+.hero p{
+    font-size:22px;
+    margin-top:15px;
+}
 
-        footer{
-            background:#8b0000;
-            color:white;
-            text-align:center;
-            padding:15px;
-            margin-top:30px;
-        }
-    </style>
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    background:#25D366;
+    color:white;
+    padding:14px 30px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.section-title{
+    text-align:center;
+    margin:40px 0 20px;
+    color:#b30000;
+}
+
+.products{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    width:280px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    overflow:hidden;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    text-align:center;
+    padding:15px;
+}
+
+.card p{
+    text-align:center;
+    padding:0 15px 20px;
+}
+
+.about{
+    padding:40px;
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+.contact{
+    background:white;
+    padding:40px;
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+footer{
+    background:#8b0000;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>CHAMPARAN MASALA</h1>
-    <p>Swad Bihar Ka</p>
+    <div class="logo">CHAMPARAN MASALA</div>
+    <div class="tagline">Asali Masala Asali Sawad</div>
 </header>
 
 <nav>
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
 </nav>
 
-<section class="hero">
-    <h1>Pure & Authentic Masale</h1>
-    <p>Har Rasoi Ka Vishwas</p>
-    <a href="#" class="btn">Order Now</a>
+<section class="hero" id="home">
+    <h1>Asali Masala Asali Sawad</h1>
+    <p>Har Rasoi Ka Bharosa - Champaran Masala</p>
+
+    <a class="btn"
+       href="https://wa.me/+919263108239">
+       WhatsApp Par Order Karein
+    </a>
 </section>
 
+<h2 class="section-title" id="products">Hamare Products</h2>
+
 <section class="products">
-    <h2>Hamare Products</h2>
 
-    <div class="product-box">
-        <h3>Mirch Powder</h3>
-        <p>Shuddh aur Teekha Swad</p>
-    </div>
+<div class="card">
+   <img src="mirch.jpg" alt="Mirch Powder">
+    <h3>Mirch Powder</h3>
+    <p>Teekha, Shuddh aur Khushbudar.</p>
+</div>
 
-    <div class="product-box">
-        <h3>Haldi Powder</h3>
-        <p>Natural Rang aur Gunvatta</p>
-    </div>
+<div class="card">
 
-    <div class="product-box">
-        <h3>Dhaniya Powder</h3>
-        <p>Taza Khushboo aur Swad</p>
-    </div>
+<img src="images/haldi.jpg" alt="Haldi Powder">
+    <h3>Haldi Powder</h3>
+    <p>Natural Rang aur Behtareen Gunvatta.</p>
+</div>
+
+<div class="card">
+
+<img src="images/dhaniya.jpg" alt="Dhaniya Powder">
+    <h3>Dhaniya Powder</h3>
+    <p>Taza Khushboo aur Swad Ka Vaada.</p>
+</div>
+
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">Hamare Bare Mein</h2>
+    <p>
+        Champaran Masala ek bharosemand brand hai jo shuddh,
+        gunvatta-yukt aur swadisht masale grahakon tak pahunchata hai.
+        Hamara lakshya har ghar ki rasoi ko asli Bharatiya swad se bharna hai.
+    </p>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Sampark Karein</h2>
+
+    <p><strong>Mobile:</strong> +91 9263108239</p>
+    <p><strong>Email:</strong> infosimja@.com</p>
+    <p><strong>Address:</strong> Chamaparan, Bihar, India</p>
 </section>
 
 <footer>
-    <p>© 2026 Champaran Masala. All Rights Reserved.</p>
+    © 1985 Champaran Masala | All Rights Reserved
 </footer>
 
 </body>
